@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentIQ</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>ContentIQ</h1>
+            <div class="status" id="api-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Checking...</span>
+            </div>
+        </div>
+
+        <!-- Video Info Section -->
+        <div class="video-info" id="video-info">
+            <div class="video-title" id="video-title">Loading...</div>
+            <div class="video-id" id="video-id"></div>
+        </div>
+
+        <!-- Not on YouTube Message -->
+        <div class="error-message" id="not-youtube" style="display: none;">
+            <p>Please open a YouTube video to use this extension.</p>
+        </div>
+
+        <!-- Index Section -->
+        <div class="index-section" id="index-section" style="display: none;">
+            <div class="index-status" id="index-status">
+                Checking index status...
+            </div>
+            <button id="index-btn" class="btn btn-primary">
+                Index Video
+            </button>
+            <div class="index-progress" id="index-progress" style="display: none;">
+                <div class="spinner"></div>
+                <span>Indexing... This may take 20-30 seconds.</span>
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section" id="chat-section" style="display: none;">
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chat-messages">
+                <div class="system-message">
+                    Video indexed! Ask me anything about this video.
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <textarea 
+                    id="question-input" 
+                    class="question-input" 
+                    placeholder="Ask a question about this video..."
+                    rows="3"
+                ></textarea>
+                <button id="ask-btn" class="btn btn-ask">
+                    Ask
+                </button>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div class="loading" id="loading" style="display: none;">
+                <div class="loading-spinner"></div>
+                <span>Thinking...</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <span class="powered-by">Powered by LangChain</span>
+        </div>
+    </div>
+
+    <script src="../utils/api-client.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ContextCast AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>ContextCast AI</h1>
+        <p>YouTube RAG Chat</p>
+      </div>
+
+      <div class="sidebar-section">
+        <label for="youtubeUrl">YouTube URL</label>
+        <input id="youtubeUrl" type="text" placeholder="Paste YouTube URL here" />
+        <button id="indexBtn">Index Video</button>
+        <div id="indexStatus" class="status"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <label>Retriever</label>
+        <select id="retrieverType">
+          <option value="simple">Simple</option>
+          <option value="rewriting">Query Rewriting</option>
+          <option value="hybrid">Hybrid</option>
+        </select>
+      </div>
+
+      <button id="clearBtn" class="clear-btn">Clear Conversation</button>
+    </aside>
+
+    <!-- Main chat area -->
+    <main class="chat-area">
+      <div id="chatHistory" class="chat-history">
+        <div class="welcome-message">
+          <div class="welcome-icon">🎬</div>
+          <h2>Ask about any YouTube video</h2>
+          <p>Index a video on the left, then start chatting below.</p>
+        </div>
+      </div>
+
+      <div class="chat-input-bar">
+        <textarea
+          id="questionInput"
+          rows="1"
+          placeholder="Ask a question about the video..."
+        ></textarea>
+        <button id="askBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

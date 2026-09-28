@@ -1,0 +1,103 @@
+{
+  "study_date": "2026-01-19T17:45:42.583349",
+  "baseline": {
+    "config_name": "simple_k4",
+    "retriever_type": "simple",
+    "top_k": 4,
+    "faithfulness": 0.936,
+    "answer_relevancy": null,
+    "context_precision": 0.958,
+    "context_recall": 0.744,
+    "num_questions": 10,
+    "video_id": "kY14KfZQ1TI",
+    "timestamp": "2026-01-19T17:21:41.394700"
+  },
+  "all_results": [
+    {
+      "config_name": "simple_k4",
+      "retriever_type": "simple",
+      "top_k": 4,
+      "faithfulness": 0.936,
+      "answer_relevancy": null,
+      "context_precision": 0.958,
+      "context_recall": 0.744,
+      "num_questions": 10,
+      "video_id": "kY14KfZQ1TI",
+      "timestamp": "2026-01-19T17:21:41.394700"
+    },
+    {
+      "config_name": "simple_k6",
+      "retriever_type": "simple",
+      "top_k": 6,
+      "faithfulness": 1.0,
+      "answer_relevancy": null,
+      "context_precision": 0.87,
+      "context_recall": 0.836,
+      "num_questions": 10,
+      "video_id": "kY14KfZQ1TI",
+      "timestamp": "2026-01-19T17:28:13.566022",
+      "overall_score": 0.908
+    },
+    {
+      "config_name": "hybrid_k4",
+      "retriever_type": "hybrid",
+      "top_k": 4,
+      "faithfulness": 0.966,
+      "answer_relevancy": null,
+      "context_precision": 0.92,
+      "context_recall": 0.817,
+      "num_questions": 10,
+      "video_id": "kY14KfZQ1TI",
+      "timestamp": "2026-01-19T17:36:23.294702"
+    },
+    {
+      "config_name": "hybrid_k6",
+      "retriever_type": "hybrid",
+      "top_k": 6,
+      "faithfulness": 0.993,
+      "answer_relevancy": null,
+      "context_precision": 0.77,
+      "context_recall": 0.836,
+      "num_questions": 10,
+      "video_id": "kY14KfZQ1TI",
+      "timestamp": "2026-01-19T17:45:42.577269"
+    }
+  ],
+  "improvements": [
+    {
+      "config": "simple_k6",
+      "faithfulness_change": 0.06399999999999995,
+      "precision_change": -0.08799999999999997,
+      "recall_change": 0.09199999999999997
+    },
+    {
+      "config": "hybrid_k4",
+      "faithfulness_change": 0.029999999999999916,
+      "precision_change": -0.03799999999999992,
+      "recall_change": 0.07299999999999995
+    },
+    {
+      "config": "hybrid_k6",
+      "faithfulness_change": 0.05699999999999994,
+      "precision_change": -0.18799999999999994,
+      "recall_change": 0.09199999999999997
+    }
+  ],
+  "best_config": {
+    "config_name": "simple_k6",
+    "retriever_type": "simple",
+    "top_k": 6,
+    "faithfulness": 1.0,
+    "answer_relevancy": null,
+    "context_precision": 0.87,
+    "context_recall": 0.836,
+    "num_questions": 10,
+    "video_id": "kY14KfZQ1TI",
+    "timestamp": "2026-01-19T17:28:13.566022",
+    "overall_score": 0.908
+  },
+  "recommendations": [
+    "\u2713 Hybrid retriever improved Context Recall to 0.836",
+    "\u2713 RECOMMENDED: Use simple_k6 for best overall performance"
+  ]
+}

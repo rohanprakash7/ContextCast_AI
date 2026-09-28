@@ -1,0 +1,55 @@
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Chrome Extension
+chrome-extension/
+
+# Tests
+tests/
+verify_*.py
+test_*.py
+
+# Config files
+.env
+.env.example
+
+# Temporary
+bin/
+temp/
+tmp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db

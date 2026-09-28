@@ -1,0 +1,9 @@
+{
+  "faithfulness": 1.0,
+  "answer_relevancy": null,
+  "context_precision": 0.9166666666041667,
+  "context_recall": 0.4166666666666667,
+  "num_questions": 3,
+  "retriever_type": "simple",
+  "video_id": "kY14KfZQ1TI "
+}
